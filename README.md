@@ -3,6 +3,27 @@
 
 A collection of triangulation toys for studying lattice point/vector configurations.
 
+## vcgame
+
+An interactive terminal game built around **triangulations of 3D lattice vector
+configurations**. The fan is rendered in real time using a curses-based ASCII renderer.
+
+The player navigates a simplicial fan by moving along geodesics on the 2-sphere. Crossing
+a wall between cones performs a **bistellar flip**, modifying the triangulation live. The
+fan can be locked for free exploration without flipping.
+
+Requires [regfans](https://github.com/natemacfadden/regfans) and numpy. It works best if
+pynput is also installed.
+
+```bash
+cd vcgame
+python main.py --shape cube --n 5
+python main.py --shape trunc_oct
+python main.py --shape reflexive --polytope_id 7
+```
+
+`vcgame` was built with [Claude Code](https://claude.ai/claude-code).
+
 ## pushing (outdated... see [dualGNN](https://github.com/natemacfadden/dualGNN))
 
 A C library for constructing pushing triangulations of point/vector configurations,
@@ -44,24 +65,3 @@ python live_triplot.py --data ../data/491_big2face.dat
 ```
 
 See [grow2d/README.md](grow2d/README.md) for details.
-
-## vcgame
-
-An interactive terminal game built around **triangulations of 3D lattice vector
-configurations**. The fan is rendered in real time using a curses-based ASCII renderer.
-
-The player navigates a simplicial fan by moving along geodesics on the 2-sphere. Crossing
-a wall between cones performs a **bistellar flip**, modifying the triangulation live. The
-fan can be locked for free exploration without flipping.
-
-Requires [regfans](https://github.com/natemacfadden/regfans) and numpy. It works best if
-pynput is also installed.
-
-```bash
-cd vcgame
-python main.py --shape cube --n 5
-python main.py --shape trunc_oct
-python main.py --shape reflexive --polytope_id 7
-```
-
-`vcgame` was built with [Claude Code](https://claude.ai/claude-code).
