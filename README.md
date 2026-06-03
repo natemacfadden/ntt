@@ -3,7 +3,7 @@
 
 A collection of triangulation toys for studying lattice point/vector configurations.
 
-## pushing
+## pushing (outdated... see [dualGNN](https://github.com/natemacfadden/dualGNN))
 
 A C library for constructing pushing triangulations of point/vector configurations,
 with optional randomization and fineness.
@@ -22,7 +22,7 @@ for details and algorithm notes.
 
 No external dependencies for the core library — just a C compiler.
 
-## grow2d
+## grow2d (outdated... see [dualGNN](https://github.com/natemacfadden/dualGNN))
 
 Random fine triangulations of 2D lattice polygons. Originally implemented by me in
 [CYTools](https://github.com/LiamMcAllisterGroup/cytools);
